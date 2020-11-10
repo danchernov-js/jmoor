@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+}
+
+@media (max-width: 820px) {
+  .cards {
+    width: 400px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1220px) {
+  .cards {
+    width: 800px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1221px) {
+  .cards {
+    width: 1200px;
+    margin: auto;
+  }
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+}
+
+h2 {
+  font: 50px/80px "Montserrat-Light";
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.box {
+  position: relative;
+  border: rgba(153, 218, 238, 0.5) solid 5px;
+  border-radius: 20px;
+  flex-basis: 360px;
+  height: 425px;
+  margin: 15px;
+  transition: transform 0.8s;
+}
+
+.inner-box {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  flex-basis: 360px;
+  height: 425px;
+  transition: transform 0.8s;
+}
+
+.box:hover {
+  position: relative;
+  background: #98D2E4;
+  border: #98D2E4 solid 5px;
+  border-radius: 20px;
+  flex-basis: 360px;
+  height: 425px;
+  margin: 15px;
+  transition: transform 0.8s;
+}
+
+.inner-box:hover {
+  position: relative;
+  background: white;
+  flex-basis: 360px;
+  height: 425px;
+  transform: translate(0, -20px);
+}
+
+
+/* .container div {
+  border: rgba(30, 125, 155, 0.5) solid 5px;
+  border-radius: 20px;
+  flex-basis: 360px;
+  height: 425px;
+  margin: 15px;
+  transition: transform 0.8s;
+}
+
+.container div:hover {
+  border: rgba(30, 125, 155, 0.5) solid 5px;
+  border-radius: 20px;
+  flex-basis: 360px;
+  height: 425px;
+  margin: 15px;
+  transform: translate(0, -20px);
+} */
+
+.container div h3 {
+  font: 20px/30px "Montserrat-Medium";
+  color: #077598;
+  margin: 15px 20px 5px 20px;
+}
+
+.container div p {
+  font: 15px/20px "Montserrat-Light";
+  color: #113743;
+  margin: 0px 20px 5px 20px;
+}
+
+#price {
+  font: 20px/30px "Montserrat-Medium";
+  color: #113743;
+  margin: 0px 20px 20px 20px;
+  text-align: right;
+}
+
+img {
+  border-radius: 15px 15px 0 0;
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
